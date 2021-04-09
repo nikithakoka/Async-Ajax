@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Non-reloading Page update</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form action="" method="post">
+        First Name: <input placeholder="First Name" type="text" name="firstname" maxlength="12" size="12"/> <br/><br/>
+        Gender:<br/>
+        Male:<input type="radio" name="gender" value="Male"/><br/>
+        Female:<input type="radio" name="gender" value="Female"/><br/><br/>
+
+        Favorite Food:<br/>
+        Steak:<input type="checkbox" name="food[]" value="Steak"/><br/>
+        Pizza:<input type="checkbox" name="food[]" value="Pizza"/><br/>
+        Chicken:<input type="checkbox" name="food[]" value="Chicken"/><br/><br/>
+
+        <textarea wrap="physical" cols="20" name="quote" rows="5" placeholder="message"></textarea><br/><br>
+
+        Select a Level of Education:<br/>
+        <select name="education">
+          <option value="Jr.High">Jr.High</option>
+          <option value="HighSchool">HighSchool</option>
+          <option value="College">College</option>
+        </select><br/>
+        <p><input type="submit" /></p>
+    </form>
+    <h2>JSON</h2>
+    <div id="result"></div>
+    <script src="update.js"> </script>
+  </body>
+</html>
